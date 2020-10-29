@@ -17,12 +17,6 @@ namespace FlowerWebApi.Controllers
             this._database = context;
         }
 
-        //[HttpGet]
-        //public ActionResult<IEnumerable<string>> GetStore()
-        //{
-        //    return new string[] { "value 1", "value 2" };
-        //}
-
         [HttpGet]
         public async Task<IEnumerable<Store>> GetStore()
         {
