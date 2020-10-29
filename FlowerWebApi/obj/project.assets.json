@@ -9660,23 +9660,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\201706\\.nuget\\packages\\": {},
+    "C:\\Users\\ermee\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\201706\\Documents\\FlowerWebApi\\FlowerWebApi\\FlowerWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\ermee\\Desktop\\work\\FlowerWebApi\\FlowerWebApi\\FlowerWebApi.csproj",
       "projectName": "FlowerWebApi",
-      "projectPath": "C:\\Users\\201706\\Documents\\FlowerWebApi\\FlowerWebApi\\FlowerWebApi.csproj",
-      "packagesPath": "C:\\Users\\201706\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\201706\\Documents\\FlowerWebApi\\FlowerWebApi\\obj\\",
+      "projectPath": "C:\\Users\\ermee\\Desktop\\work\\FlowerWebApi\\FlowerWebApi\\FlowerWebApi.csproj",
+      "packagesPath": "C:\\Users\\ermee\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ermee\\Desktop\\work\\FlowerWebApi\\FlowerWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\201706\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ermee\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -9750,7 +9750,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.402\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
       }
     }
   },
@@ -9759,7 +9759,7 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Пакет \"MySql.Data.Entity 6.10.9\" был восстановлен с помощью \".NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8\", а не целевой платформы проекта \".NETCoreApp,Version=v3.1\". Этот пакет может быть не полностью совместим с вашим проектом.",
+      "message": "Package 'MySql.Data.Entity 6.10.9' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework '.NETCoreApp,Version=v3.1'. This package may not be fully compatible with your project.",
       "libraryId": "MySql.Data.Entity",
       "targetGraphs": [
         ".NETCoreApp,Version=v3.1"

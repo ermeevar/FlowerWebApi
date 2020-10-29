@@ -6,7 +6,7 @@ using FlowerWebApi.Models;
 
 namespace FlowerWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
     public class CategoriesController : ControllerBase
     {

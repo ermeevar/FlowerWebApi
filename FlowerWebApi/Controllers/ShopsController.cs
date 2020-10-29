@@ -6,9 +6,9 @@ using FlowerWebApi.Models;
 
 namespace FlowerWebApi.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("[controller]")]
     [ApiController]
-    public class ShopsController : ControllerBase
+    public class ShopsController : Controller
     {
         private readonly FlowerDBContext database;
 
@@ -18,7 +18,7 @@ namespace FlowerWebApi.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Shop>>> GetShops()
+        public async Task<IEnumerable<Shop>> GetShops()
         {
             return await database.Shops.ToListAsync();
         }
@@ -51,7 +51,7 @@ namespace FlowerWebApi.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<Shop>> PostShop(Shop shop)
+        public async Task<ActionResult> PostShop(Shop shop)
         {
             database.Shops.Add(shop);
             await database.SaveChangesAsync();
@@ -60,7 +60,7 @@ namespace FlowerWebApi.Controllers
         }
 
         [HttpDelete("{id}")]
-        public async Task<ActionResult<Shop>> DeleteShop(int id)
+        public async Task<ActionResult> DeleteShop(int id)
         {
             var shop = await database.Shops.FindAsync(id);
             if (shop == null)
@@ -71,7 +71,7 @@ namespace FlowerWebApi.Controllers
             database.Shops.Remove(shop);
             await database.SaveChangesAsync();
 
-            return shop;
+            return NoContent();
         }
     }
 }
