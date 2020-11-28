@@ -70,7 +70,7 @@ namespace FlowerWebApi.Controllers
             return NoContent();
         }
 
-        [HttpPut("{id}")]
+        [HttpDelete("{id}")]
         public async Task<ActionResult> DeleteStore(int id)
         {
             Store store = await _database.Stores.FindAsync(id);
