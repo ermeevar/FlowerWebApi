@@ -8,7 +8,7 @@ namespace FlowerWebApi.Models
         public string Name { get; set; }
         public string Description { get; set; }
         public byte[] Picture { get; set; }
-        public long FirstPhone { get; set; }
-        public Nullable<long> SecondPhone { get; set; }
+        public string FirstPhone { get; set; }
+        public string SecondPhone { get; set; }
     }
 }
