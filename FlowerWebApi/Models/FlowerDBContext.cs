@@ -13,6 +13,8 @@ namespace FlowerWebApi.Models
         public DbSet<StoreProduct> StoreProducts { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Bouquet> Bouquets { get; set; }
+        public DbSet<BouquetProduct> BouquetProducts { get; set; }
+        public DbSet<TemplateCategory> TemplateCategories { get; set; }
 
         public FlowerDBContext(DbContextOptions<FlowerDBContext> options)
             : base(options)
