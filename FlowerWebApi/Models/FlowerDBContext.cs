@@ -16,6 +16,7 @@ namespace FlowerWebApi.Models
         public DbSet<BouquetProduct> BouquetProducts { get; set; }
         public DbSet<TemplateCategory> TemplateCategories { get; set; }
         public DbSet<Template> Templates { get; set; }
+        public DbSet<OrderStatus> OrderStatuses { get; set; }
 
         public FlowerDBContext(DbContextOptions<FlowerDBContext> options)
             : base(options)
