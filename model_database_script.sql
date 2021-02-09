@@ -118,10 +118,10 @@ create table orders
     start datetime not null,
     finish datetime not null,
     isRandom bool default false,
-    orederStatusId int null,
+    orderStatusId int null,
     bouquetId int null,
     templateId int null,
-    foreign key (orederStatusId) references orderStatuses(id) on delete set null,
+    foreign key (orderStatusId) references orderStatuses(id) on delete set null,
     foreign key (bouquetId) references bouquets(id) on delete set null,
     foreign key (templateId) references templates(id) on delete set null
 );
@@ -169,6 +169,8 @@ INSERT INTO `flower`.`templatecategories` (`name`) VALUES ('8 марта');
 
 INSERT INTO `flower`.`templates` (`name`, `templateCategoryId`) VALUES ('Для самых любимых', '4');
 INSERT INTO `flower`.`templates` (`name`, `templateCategoryId`) VALUES ('Радость', '1');
+
+INSERT INTO `flower`.`orders` (`start`, `finish`, `bouquetId`) VALUES ('19.12.2020', '21.12.2020', '1');
 
 
 
