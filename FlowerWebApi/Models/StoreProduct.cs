@@ -8,8 +8,5 @@
         public double Cost { get; set; }
         public int CategoryId { get; set; }
         public int StoreId { get; set; }
-
-        public virtual Category Category { get; set; }
-        public virtual Store Store { get; set; }
     }
 }

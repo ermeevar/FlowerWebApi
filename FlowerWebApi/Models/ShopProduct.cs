@@ -6,8 +6,5 @@
         public bool IsEmpty { get; set; }
         public int StoreProductId { get; set; }
         public int ShopId { get; set; }
-
-        public virtual StoreProduct StoreProduct { get; set; }
-        public virtual Shop Shop { get; set; }
     }
 }

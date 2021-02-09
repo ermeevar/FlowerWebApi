@@ -10,5 +10,6 @@ namespace FlowerWebApi.Models
         public byte[] Picture { get; set; }
         public string FirstPhone { get; set; }
         public string SecondPhone { get; set; }
+        public int AccountId { get; set; }
     }
 }
