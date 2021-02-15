@@ -121,6 +121,8 @@ create table orders
     orderStatusId int null,
     bouquetId int null,
     templateId int null,
+	userId int not null,
+    foreign key (userId) references users(id) on delete cascade
     foreign key (orderStatusId) references orderStatuses(id) on delete set null,
     foreign key (bouquetId) references bouquets(id) on delete set null,
     foreign key (templateId) references templates(id) on delete set null
@@ -170,7 +172,7 @@ INSERT INTO `flower`.`templatecategories` (`name`) VALUES ('8 марта');
 INSERT INTO `flower`.`templates` (`name`, `templateCategoryId`) VALUES ('Для самых любимых', '4');
 INSERT INTO `flower`.`templates` (`name`, `templateCategoryId`) VALUES ('Радость', '1');
 
-INSERT INTO `flower`.`orders` (`start`, `finish`, `bouquetId`) VALUES ('19.12.2020', '21.12.2020', '1');
+INSERT INTO `flower`.`orders` (`start`, `finish`, `bouquetId`, `userId` ) VALUES ('19.12.2020', '21.12.2020', '1', '1');
 
 
 
