@@ -7,7 +7,8 @@ create table accounts
 (
 	id int auto_increment primary key,
     login varchar(100) unique not null,
-    password varchar(100) not null,
+    passwordHash varchar(100) null,
+    salt varchar(100) null,
     role varchar(100) not null
 );
 
