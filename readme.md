@@ -6,8 +6,8 @@ API process CRUD requests from client application for database.
 _____
 ## Database
 __sqript.sql__ - database model script with minimal initial data.
-- localhost:3306;
-- user:root;
+- localhost:3306
+- user:root
 ____
 ## Links
 - [Client App for Store](https://github.com/ermeevar/FlowerUI)

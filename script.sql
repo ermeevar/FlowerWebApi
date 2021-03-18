@@ -131,6 +131,9 @@ INSERT INTO `flower`.`productcategories` (`name`) VALUES ('Украшение');
 
 INSERT INTO `flower`.`products` (`name`, `cost`, `storeId`, `productcategoryId`) VALUES ('Роза', '128.10', '1', '1');
 INSERT INTO `flower`.`products` (`name`, `cost`, `storeId`, `productcategoryId`) VALUES ('Лилия', '200.90', '1', '1');
+INSERT INTO `flower`.`products` (`name`, `cost`, `storeId`, `productcategoryId`) VALUES ('Пион', '250.50', '1', '1');
+INSERT INTO `flower`.`products` (`name`, `cost`, `storeId`, `productcategoryId`) VALUES ('Лаванда', '15.00', '2', '1');
+INSERT INTO `flower`.`products` (`name`, `cost`, `storeId`, `productcategoryId`) VALUES ('Лента красная', '23.70', '3', '1');
 INSERT INTO `flower`.`products` (`name`, `cost`, `storeId`, `productcategoryId`) VALUES ('Лаванда', '11.50', '2', '2');
 
 INSERT INTO `flower`.`orderstatuses` (`name`) VALUES ('Ожидание');
