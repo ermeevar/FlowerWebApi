@@ -9,6 +9,7 @@ namespace FlowerWebApi.Models
         public DateTime Finish { get; set; }
         public bool IsRandom { get; set; }
         public double Cost { get; set; }
+        public string Card { get; set; }
         public int? UserId { get; set; }
         public int? OrderStatusId { get; set; }
         public int? ShopId { get; set; }
