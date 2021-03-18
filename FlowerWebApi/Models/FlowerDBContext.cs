@@ -7,10 +7,9 @@ namespace FlowerWebApi.Models
     {
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Store> Stores { get; set; }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
         public DbSet<Shop> Shops { get; set; }
-        public DbSet<ShopProduct> ShopProducts { get; set; }
-        public DbSet<StoreProduct> StoreProducts { get; set; }
+        public DbSet<Product>Products { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Bouquet> Bouquets { get; set; }
         public DbSet<BouquetProduct> BouquetProducts { get; set; }
