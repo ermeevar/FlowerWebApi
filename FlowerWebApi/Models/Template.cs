@@ -6,5 +6,6 @@
         public string Name { get; set; }
         public int? TemplateCategoryId { get; set; }
         public int? StoreId { get; set; }
+        public byte[] Picture { get; set; }
     }
 }
