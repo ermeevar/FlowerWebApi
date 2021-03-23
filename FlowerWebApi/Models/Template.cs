@@ -7,5 +7,6 @@
         public int? TemplateCategoryId { get; set; }
         public int? StoreId { get; set; }
         public byte[] Picture { get; set; }
+        public double Cost { get; set; }
     }
 }
