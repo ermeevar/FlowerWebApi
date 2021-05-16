@@ -88,6 +88,8 @@ CREATE TABLE IF NOT EXISTS `flower`.`Templates` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `name` VARCHAR(100) NOT NULL,
   `templateCategoryId` INT NOT NULL,
+  `picture` LONGBLOB  NULL,
+  `cost` float  NULL,
   `storeId` INT NOT NULL,
   PRIMARY KEY (`id`),
   FOREIGN KEY (storeId) REFERENCES Stores(id) on delete cascade,
