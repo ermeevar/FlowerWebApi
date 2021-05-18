@@ -114,9 +114,9 @@ CREATE TABLE IF NOT EXISTS `flower`.`Orders` (
   FOREIGN KEY (bouquetId) REFERENCES Bouquets(id) on delete set null,
   FOREIGN KEY (templateId) REFERENCES Templates(id) on delete set null);
 
-INSERT INTO `flower`.`Accounts` (`login`, `passwordHash`, `role`) VALUES ('buket_stolici', 'qwerty', 'store');
+INSERT INTO `flower`.`Accounts` (`login`, `passwordHash`, `salt`, `role`) VALUES ('qwerty', '/FSOskNM1JkxqzlDYTEyC93ayABSz7eTG3EGoNE/QS7', 'eSUxTtjWlC6BHarI', 'store');
 INSERT INTO `flower`.`Accounts` (`login`, `passwordHash`, `role`) VALUES ('magazin_21', 'qwerty', 'shop');
-INSERT INTO `flower`.`Accounts` (`login`, `passwordHash`, `role`) VALUES ('zavoyskaya_2105', 'qwerty', 'user');
+INSERT INTO `flower`.`Accounts` (`login`, `passwordHash`, `salt`, `role`) VALUES ('123', 'BAQ0NldTlY.lyl.ulc64pO8oYLMAccl.V.SE8cSGVV/', 'xicQhvIJ6rveYQrC', 'user');
 
 INSERT INTO `flower`.`Users` (`surname`, `name`, `phone`, `accountId`) VALUES ('Завойская', 'Рината', '8(927)022-08-55', '3');
 INSERT INTO `flower`.`Users` (`surname`, `name`, `phone`, `accountId`) VALUES ('Ермеева', 'Руфина', '8(900)232-55-52', '3');
