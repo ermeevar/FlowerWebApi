@@ -7,14 +7,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:5.0-buster-slim AS build
 WORKDIR /src
-COPY ["FlowerWebApi.csproj", "FlowerWebApi/"]
-RUN dotnet restore "FlowerWebApi/FlowerWebApi.csproj"
+COPY ["FlowerWebApiAssembly.csproj", "FlowerWebApi/"]
+RUN dotnet restore "FlowerWebApi/FlowerWebApiAssembly.csproj"
 WORKDIR "/src/FlowerWebApi"
 COPY . .
-RUN dotnet build "FlowerWebApi.csproj" -c Release -o /app/build
+RUN dotnet build "FlowerWebApiAssembly.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "FlowerWebApi.csproj" -c Release -o /app/publish
+RUN dotnet publish "FlowerWebApiAssembly.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
