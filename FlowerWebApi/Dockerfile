@@ -19,4 +19,4 @@ RUN dotnet publish "FlowerWebApiAssembly.csproj" -c Release -o /app/publish
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "FlowerWebApi.dll"]
+ENTRYPOINT ["dotnet", "FlowerWebApiAssembly.dll"]
