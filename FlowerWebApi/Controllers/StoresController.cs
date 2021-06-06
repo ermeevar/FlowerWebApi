@@ -58,12 +58,6 @@ namespace FlowerWebApi.Controllers
                 return BadRequest();
             }
 
-            Store _store = await _database.Stores.FindAsync(id);
-            if (_store == null)
-            {
-                return NotFound();
-            }
-
             _database.Entry(store).State = EntityState.Modified;
             await _database.SaveChangesAsync();
 
