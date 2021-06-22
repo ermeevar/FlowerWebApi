@@ -1,7 +1,6 @@
-# Web-API for Flowers App
+# Web-API for Flowers App ✨
 ![Release Status](https://img.shields.io/badge/version-1.0-lightgrey)
 Сервер предназначен для обработки запросов с клиентской части и предоставления доступа к базе данных.
-✨Magic ✨
 ## Реализовано
 - подключение к базе данных и определение ее моделей
 - обработка запросов с протоколом *HTTP*
