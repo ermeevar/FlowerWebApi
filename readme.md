@@ -1,14 +1,12 @@
-# API for Flowers App
-### > _ASP.Net Core_
-
-API process CRUD requests from client application for database.
+# Web-API for Flowers App
+![Release Status](https://img.shields.io/badge/version-1.0-lightgrey)
+Сервер предназначен для обработки запросов с клиентской части и предоставления доступа к базе данных.
 ✨Magic ✨
-_____
-## Database
-__sqript.sql__ - database model script with minimal initial data.
-- localhost:3306
-- user:root
-____
-## Links
-- [Client App for Store](https://github.com/ermeevar/FlowerUI)
-- [Client App for User](https://github.com/ermeevar/FlowerUserUI)
+## Реализовано
+- подключение к базе данных и определение ее моделей
+- обработка запросов с протоколом *HTTP*
+## База данных
+__sqript.sql__ - скрипт базы данных с минимальными данными для нормального функционирования программного обеспечения
+## Ссылки
+- [Приложения для цветочных сетей](https://github.com/ermeevar/FlowerUI)
+- [Клиентское приложение](https://github.com/ermeevar/FlowerUserUI)
