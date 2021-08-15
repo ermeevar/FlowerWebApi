@@ -1,0 +1,8 @@
+# База данных
+docker run --name flower-mysql -v ./db_data:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=GreatArtist1 --net=host -d mysql:8
+
+
+# Сервер, не обязательно запускать в докере, можете с ide, порт 80
+docker build ./FlowerWebApi/
+docker build ./FlowerWebApi/ -t flower-api
+docker run -d     --name flower-api -p --net=host flower-api
